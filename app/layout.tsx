@@ -9,7 +9,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Gaming app",
-  description: "this is a gaming website",
+  description: "this is a gaming website",  
 };
 
 export default function RootLayout({
@@ -20,7 +20,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.className}  antialiased`}>
-        this is a gaming website
         {children}
       </body>
     </html>
