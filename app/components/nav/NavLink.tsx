@@ -21,7 +21,7 @@ const NavLink = ({ navlink }: TNavLinkProps) => {
       href={link}
       className={`flex ${
         isActive ? "text-rose-400" : "text-gray-50"
-      } gap-2 items-center p-2  rounded-md`}
+      } hover:text-rose-400 my-2 gap-2 items-center duration-200 p-2 rounded-md`}
     >
       {React.cloneElement(icon, { className: "w-5 h-5" })}
       {label}

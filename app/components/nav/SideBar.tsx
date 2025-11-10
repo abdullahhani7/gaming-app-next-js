@@ -4,6 +4,7 @@ import { FaHeart } from "react-icons/fa";
 import { GoHomeFill } from "react-icons/go";
 import { MdDashboard } from "react-icons/md";
 import NavLink from "./NavLink";
+import Logo from "../defaults/Logo";
 
 export const NAV_LINKS = [
   {
@@ -35,10 +36,13 @@ export const NAV_LINKS = [
 
 const SideBar = () => {
   return (
-    <div className="col-span-2 ">
-      {NAV_LINKS.map((navlink) => (
-        <NavLink navlink={navlink} />
-      ))}
+    <div className="col-span-2">
+      <div className="flex  flex-col  h-screen sticky inset-0 py-5 px-10 bg-black/30 text-gray-50">
+        <Logo />
+        {NAV_LINKS.map((navlink) => (
+          <NavLink navlink={navlink} />
+        ))}
+      </div>
     </div>
   );
 };
