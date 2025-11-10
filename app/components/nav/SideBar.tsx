@@ -35,7 +35,7 @@ export const NAV_LINKS = [
 
 const SideBar = () => {
   return (
-    <div className="col-span-2">
+    <div className="col-span-2 ">
       {NAV_LINKS.map((navlink) => (
         <NavLink navlink={navlink} />
       ))}
